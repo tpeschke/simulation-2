@@ -1,5 +1,6 @@
 -- sim 1 70F
 
+-- sim 2 68E
 create table shopper (
 
     -- sim 2 67G

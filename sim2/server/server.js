@@ -2,7 +2,7 @@ const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
     , massive = require('massive')
-    , session = require('session')
+    , session = require('express-session')
 
 require('dotenv').config;
 
@@ -18,6 +18,7 @@ app.use(session({
 // sim 2 75C
 app.use((req, res, next) => {
 
+    //sim 2 75D
     if (!req.session.user) {
         req.session.user = {
             user_id: 1,
